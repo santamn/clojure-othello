@@ -27,8 +27,9 @@
      :w west
      :nw (comp north west)}))
 
-(defn- in-board? [pos]
+(defn- in-board?
   "盤面の中に存在するかどうかを判定"
+  [pos]
   (<= first-pos pos last-pos))
 
 (def not-wrapped? ; 折り返していないかどうかの判定
